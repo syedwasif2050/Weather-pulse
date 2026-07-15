@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.search-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #e68a00;
+}
+
+.temp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.temp-container h1 {
+  font-size: 64px;
+  font-weight: 300;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.details strong {
+  font-size: 18px;
+}
+
+.error-message {
+  color: #ff8a80;
+  margin-top: 15px;
+}
+
+.loading {
+  font-style: italic;
+  opacity: 0.8;
+}
